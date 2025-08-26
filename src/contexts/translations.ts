@@ -1,6 +1,6 @@
 export const translations = {
   en: {
-    'sidebar.title': '1NE Media Downloader',
+    'sidebar.title': '1NE Social Media Downloader',
     'sidebar.darkMode': 'Dark Mode',
     'sidebar.language': 'Language',
     'main.title': 'Download from',
@@ -16,7 +16,7 @@ export const translations = {
     'features.friendly.desc': 'Simple and intuitive interface for easy downloads',
     'usage.title': 'How to Download',
     'usage.step1.title': 'Copy the URL',
-    'usage.step1.desc': 'Copy the video URL from YouTube or Instagram',
+    'usage.step1.desc': 'Copy the video URL from Instagram or YouTube',
     'usage.step2.title': 'Paste the Link',
     'usage.step2.desc': 'Paste the URL in the input field above or click the clipboard icon',
     'usage.step3.title': 'Download',
