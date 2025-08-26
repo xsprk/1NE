@@ -8,7 +8,7 @@ export default function Logo() {
         <Download size={24} className="text-white" />
       </div>
       <span className="text-xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
-        Xdl
+        1NE
       </span>
     </div>
   );
