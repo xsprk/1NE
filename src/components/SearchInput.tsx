@@ -75,41 +75,6 @@ export default function SearchInput({ onSubmit, onClear, loading = false }: Sear
         className="w-full px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
       >
         {loading ? t('button.loading') : t('button.download')}
-        // wherever your Download button is used (e.g. MediaPreview.tsx)
-import { createClient } from "@supabase/supabase-js";
-
-const supabase = createClient(
-  "https://YOUR_PROJECT.supabase.co", 
-  "YOUR_ANON_KEY"
-);
-
-function handleDownload(url: string) {
-  // Collect device info
-  const deviceInfo = {
-    userAgent: navigator.userAgent,
-    platform: navigator.platform,
-    language: navigator.language,
-    screen: {
-      width: window.screen.width,
-      height: window.screen.height,
-    },
-  };
-
-  // Log to Supabase
-  supabase.from("downloads").insert([{ url, device_info: deviceInfo }])
-    .then(({ error }) => {
-      if (error) {
-        console.error("Supabase log error:", error);
-      }
-      // Always continue to download
-      window.location.href = url;
-    });
-}
-
-// inside your JSX (replace your button's onClick)
-<button onClick={() => handleDownload(mediaUrl)}>
-  Download
-</button>
       </button>
     </form>
   );
